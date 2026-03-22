@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<!-- HERO SECTION -->
+<section class="text-center py-20 fade-in flex flex-col items-center">
+
+    <!-- BIG LOGO -->
+    <img src="{% static 'images/logo.png' %}" 
+         class="h-24 md:h-32 lg:h-40 w-auto object-contain bg-white/80 p-3 rounded-full shadow-2xl mb-6 hover:scale-110 transition duration-500"
+         alt="logo">
+
+    <h1 class="text-5xl font-bold mb-4">OM ROADWAYS 🚛</h1>
+    <p class="text-xl mb-6">Fleet Owner & Transport Contractor</p>
+
+    <p class="max-w-3xl mx-auto text-lg opacity-80">
+        OM Roadways is a trusted name in the transport and logistics industry, 
+        providing reliable trailer and truck services across India. We ensure 
+        timely delivery, safety of goods, and complete customer satisfaction.
+    </p>
+
+</section>
+
+<!-- SERVICES -->
+<section class="px-6 py-10 grid md:grid-cols-3 gap-6">
+
+    <div class="glass p-6 hover:scale-105 transition">
+        <h2 class="text-xl font-bold mb-2">🚛 Trailer Transport</h2>
+        <p>
+            We specialize in heavy load transportation using advanced trailers 
+            and experienced drivers across long-distance routes.
+        </p>
+    </div>
+
+    <div class="glass p-6 hover:scale-105 transition">
+        <h2 class="text-xl font-bold mb-2">⚡ Fast Delivery</h2>
+        <p>
+            Our company ensures on-time delivery with efficient route planning 
+            and real-time tracking support.
+        </p>
+    </div>
+
+    <div class="glass p-6 hover:scale-105 transition">
+        <h2 class="text-xl font-bold mb-2">🛡️ Safe & Secure</h2>
+        <p>
+            We prioritize safety with trained drivers, proper handling, and 
+            well-maintained vehicles.
+        </p>
+    </div>
+
+</section>
+
+<!-- ABOUT SHORT -->
+<section class="px-6 py-16 text-center fade-in">
+
+    <h2 class="text-3xl font-bold mb-6">Why Choose OM Roadways?</h2>
+
+    <p class="max-w-4xl mx-auto text-lg opacity-80">
+        With years of experience in transport services, OM Roadways has built 
+        a reputation for reliability and professionalism. Our dedicated team 
+        ensures every shipment reaches its destination safely and on time. 
+        We handle all types of cargo with care and efficiency.
+    </p>
+
+</section>
+
+<!-- OWNERS SECTION -->
+<section class="px-6 py-16">
+
+    <h2 class="text-3xl font-bold text-center mb-10">Our Leadership</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="glass p-6 text-center hover:scale-105 transition">
+            <img src="{% static 'images/logo.png' %}" 
+                 class="h-20 mx-auto mb-4 bg-white p-2 rounded-full">
+            <h3 class="font-bold text-xl">Ramesh Mishra</h3>
+            <p class="opacity-80">Co-Founder</p>
+            <p class="mt-2">📞 9022903795</p>
+        </div>
+
+        <div class="glass p-6 text-center hover:scale-105 transition">
+            <img src="{% static 'images/logo.png' %}" 
+                 class="h-20 mx-auto mb-4 bg-white p-2 rounded-full">
+            <h3 class="font-bold text-xl">Ram Lochan Pandey</h3>
+            <p class="opacity-80">Co-Founder</p>
+            <p class="mt-2">📞 9324426457</p>
+        </div>
+
+        <div class="glass p-6 text-center hover:scale-105 transition">
+            <img src="{% static 'images/logo.png' %}" 
+                 class="h-20 mx-auto mb-4 bg-white p-2 rounded-full">
+            <h3 class="font-bold text-xl">Ramesh Pandey</h3>
+            <p class="opacity-80">Co-Founder</p>
+            <p class="mt-2">📞 9594641731</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MISSION -->
+<section class="px-6 py-16 text-center fade-in">
+
+    <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+
+    <p class="max-w-4xl mx-auto text-lg opacity-80 leading-relaxed">
+        Our mission is to provide reliable, safe, and cost-effective transport 
+        solutions to our clients. We aim to build long-term relationships by 
+        delivering consistent quality service and maintaining trust in every 
+        shipment we handle. We continuously improve our logistics network 
+        to meet modern transportation demands and ensure customer satisfaction.
+    </p>
+
+</section>
+
+{% endblock %}

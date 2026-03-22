@@ -1,0 +1,13 @@
+/* static/css/style.css */
+
+body {
+    font-family: Arial;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
