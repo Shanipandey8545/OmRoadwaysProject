@@ -5,7 +5,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Om Roadways</title>
+<!-- ✅ SEO TITLE -->
+<title>Om Roadways | Navi Mumbai Transport Company | Logistics Services India</title>
+
+<!-- ✅ SEO META -->
+<meta name="description" content="Om Roadways is a leading Navi Mumbai transport company offering reliable truck transport and logistics services across India. Based in Kalamboli, Navi Mumbai.">
+<meta name="keywords" content="Navi Mumbai transport company, transport service Kalamboli, logistics company Navi Mumbai, truck transport India, Om Roadways">
+<meta name="author" content="Om Roadways">
+<meta name="robots" content="index, follow">
+
+<!-- ✅ Canonical -->
+<link rel="canonical" href="https://omroadways.in/">
+
+<!-- ✅ Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://omroadways.in/">
+<meta property="og:title" content="Om Roadways | Navi Mumbai Transport Company">
+<meta property="og:description" content="Reliable transport contractor delivering safe and fast logistics services across India.">
+<meta property="og:image" content="https://omroadways.in/static/images/logo.png">
+
+<!-- ✅ Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Om Roadways Transport Services">
+<meta name="twitter:description" content="Trusted logistics and transport company across India.">
+<meta name="twitter:image" content="https://omroadways.in/static/images/logo.png">
+
+<!-- ✅ Local SEO -->
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Navi Mumbai">
+<meta name="geo.position" content="19.0330;73.0297">
+<meta name="ICBM" content="19.0330, 73.0297">
+
+<!-- ✅ Favicon -->
+<link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -32,6 +65,30 @@ body {
     to {opacity: 1; transform: translateY(0);}
 }
 </style>
+
+<!-- ✅ Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TransportCompany",
+  "name": "Om Roadways",
+  "url": "https://omroadways.in",
+  "logo": "https://neonerp.com/_next/static/media/logobhaarat-5-1.d892a75e.webp",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9022903795",
+    "contactType": "customer service"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "D-448, Disma Complex, Kalamboli",
+    "addressLocality": "Navi Mumbai",
+    "postalCode": "400218",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
 </head>
 
 <body class="text-white">
@@ -64,7 +121,7 @@ body {
 
 </header>
 <!-- Mobile Menu (Right Side Dropdown) -->
-<div id="mobileMenu" 
+<!-- <div id="mobileMenu" 
      class="hidden fixed top-18 right-0 w-32 glass text-white p-4 rounded-xl shadow-xl flex flex-col gap-3 z-50">
 
     <a href="/" class="flex items-center gap-1 py-1 border-b border-white/20 hover:text-yellow-300">
@@ -83,37 +140,18 @@ body {
         🚛 Services
     </a>
 
+</div> -->
+
+<div id="mobileMenu" 
+     class="hidden fixed top-18 right-0 w-32 glass text-white p-4 rounded-xl shadow-xl flex flex-col gap-3 z-50">
+
+    <a href="/">🏠 Home</a>
+    <a href="/about">📖 About</a>
+    <a href="/contact">📞 Contact</a>
+    <a href="/service">🚛 Services</a>
+
 </div>
 
-<!-- <header class="glass p-4 flex items-center justify-between sticky top-0 z-50"> -->
-<!-- 
-    <div class="flex items-center gap-3">
-        <a href="{% url 'home' %}">
-            <img src="{% static 'images/logo.png' %}" 
-                 class="h-10 w-auto object-contain bg-white p-1 rounded-full shadow-md"
-                 alt="logo">
-        </a>
-        <h1 class="text-xl font-bold">OM ROADWAYS</h1>
-    </div>
-
-    <div class="flex items-center gap-6">
-
-        <nav class="hidden md:flex gap-6">
-            <a href="/" class="hover:text-yellow-300 transition">Home</a>
-            <a href="/about" class="hover:text-yellow-300 transition">About</a>
-            <a href="/contact" class="hover:text-yellow-300 transition">Contact</a>
-            <a href="/service" class="hover:text-yellow-300 transition">Services</a>
-
-        </nav> -->
-
-        <!-- Profile Icon -->
-        <!-- <div class="text-xl cursor-pointer hover:scale-110 transition">
-            👤
-        </div> -->
-
-    <!-- </div>
-
-</header> -->
 
 {% block content %}{% endblock %}
 
